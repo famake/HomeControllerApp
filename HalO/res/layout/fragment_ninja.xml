@@ -1,0 +1,80 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NinjaFragment" >
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <RelativeLayout
+        android:id="@+id/alarmTime"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <TextView
+            android:id="@+id/box1temp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/sourceString"
+            android:layout_alignParentLeft="true"
+            android:text="Bathroom temperature: "
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/temperatureValue1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/box1temp"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/box1temp"
+            android:text="0"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textSize="25dp" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/box1temp"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="28dp" >
+        </RadioGroup>
+
+        <ToggleButton
+            android:id="@+id/ninjaSwitch3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/ninjaSwitch2"
+            android:text="ToggleButton"
+            android:textOff="Bryter 3"
+            android:textOn="Bryter 3" />
+
+        <ToggleButton
+            android:id="@+id/ninjaSwitch2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/ninjaSwitch1"
+            android:text="ToggleButton"
+            android:textOff="Bryter 2"
+            android:textOn="Bryter 2" />
+
+        <ToggleButton
+            android:id="@+id/ninjaSwitch1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/box1temp"
+            android:text="ToggleButton"
+            android:textOff="Bryter 1"
+            android:textOn="Bryter 1" />
+
+    </RelativeLayout>
+
+</FrameLayout>

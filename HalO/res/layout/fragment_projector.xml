@@ -1,0 +1,86 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProjectorFragment" >
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <ToggleButton
+        android:id="@+id/projectorPower"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:text="ToggleButton" />
+
+    <ToggleButton
+        android:id="@+id/screenUpButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/projectorPower"
+        android:text="Screen up override"
+        android:textOff="Screen up override"
+        android:textOn="Screen up override" />
+
+    <Button
+        android:id="@+id/sleepTimer30"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/screenUpButton"
+        android:text="sleepTimer30" />
+
+    <Button
+        android:id="@+id/sleepTimer60"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/sleepTimer30"
+        android:text="sleepTimer60" />
+
+    <Button
+        android:id="@+id/sleepTimer90"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/sleepTimer60"
+        android:text="sleepTimer90" />
+
+    <Button
+        android:id="@+id/sleepTimer120"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/sleepTimer90"
+        android:text="sleepTimer120" />
+
+    <Button
+        android:id="@+id/sleepTimerOff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/sleepTimer120"
+        android:text="SleepTimerOff" />
+
+    <ToggleButton
+        android:id="@+id/pictureMode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/sleepTimerOff"
+        android:layout_marginTop="19dp"
+        android:text="SetPictureMode"
+        android:textOff="Day"
+        android:textOn="Night" />
+
+</RelativeLayout>
